@@ -8,15 +8,23 @@
                </li>
 
                <!-- SIDEBAR MENU -->
-               <li class="menu-title">Judul Besar</li>
+               <li class="menu-title">Admin Blog</li>
                <li class="menu-item-has-children active dropdown">
-                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>Judul</a>
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>Posting</a>
                    <ul class="sub-menu children dropdown-menu">
-                       <li><i class="fa fa-puzzle-piece"></i><a href="ui-buttons.html">Sub Judul 1</a></li>
-                       <li><i class="fa fa-id-badge"></i><a href="ui-badges.html">Sub Judul 2</a></li>
-                       <li><i class="fa fa-bars"></i><a href="ui-tabs.html">Sub Judul 3</a></li>
+                       <li><i class="fa fa-puzzle-piece"></i><a href="#">Semua Posting</a></li>
+                       <li><i class="fa fa-puzzle-piece"></i><a href="#">Tambah Posting</a></li>
                    </ul>
                </li>
+
+               <li class="menu-item-has-children active dropdown">
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>Kategori</a>
+                   <ul class="sub-menu children dropdown-menu">
+                       <li><i class="fa fa-puzzle-piece"></i><a href="ui-buttons.html">Semua Kategori</a></li>
+                       <li><i class="fa fa-puzzle-piece"></i><a href="ui-buttons.html">Tambah Kategori</a></li>
+                   </ul>
+               </li>
+
            </ul>
        </div><!-- /.navbar-collapse -->
    </nav>
