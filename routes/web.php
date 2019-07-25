@@ -41,3 +41,6 @@ Route::get('/admin', function(){
 Route::get('/login', function(){
     return view('admin.login');
 })->name('login');
+
+// Resources Controller
+Route::resource('kategori', 'KategoriController')->middleware('auth');

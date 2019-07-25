@@ -18,10 +18,9 @@
                </li>
 
                <li class="menu-item-has-children active dropdown">
-                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-cogs"></i>Kategori</a>
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-bookmark"></i>Kategori</a>
                    <ul class="sub-menu children dropdown-menu">
-                       <li><i class="fa fa-puzzle-piece"></i><a href="ui-buttons.html">Semua Kategori</a></li>
-                       <li><i class="fa fa-puzzle-piece"></i><a href="ui-buttons.html">Tambah Kategori</a></li>
+                       <li><i class="fa fa-bookmark"></i><a href="/kategori">Semua Kategori</a></li>
                    </ul>
                </li>
 
