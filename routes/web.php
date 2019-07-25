@@ -15,10 +15,29 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Dashboard Blog
 Route::get('/index', function () {
-    return view('home');
+    return view('index');
 });
 
-Route::get('/template', function(){
-    return view('template');
-});
+// Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
+
+// Authentication Routes ...
+// Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('/login', 'Auth\LoginController@login');
+Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
+
+// Register User
+Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
+Route::post('register', 'Auth\RegisterController@register');
+
+// Admin Page
+Route::get('/admin', function(){
+    return view('admin.index');
+})->middleware('auth')->name('admin');
+
+
+Route::get('/login', function(){
+    return view('admin.login');
+})->name('login');

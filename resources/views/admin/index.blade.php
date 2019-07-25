@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.layout')
 
 @section('breadcrumb_title')
 <h1>Dashboard</h1>

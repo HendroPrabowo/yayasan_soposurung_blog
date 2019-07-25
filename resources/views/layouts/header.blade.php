@@ -12,7 +12,7 @@
                     <img style="width:40px" src="{{ asset('image/logo/yayasan_soposurung_logo.png') }}" alt="Yasop">&nbsp;Admin
                 </a>
                 <div class="user-menu dropdown-menu">
-                    <a class="nav-link" href="#"><i class="fa fa-power-off"></i>Logout</a>
+                    <a class="nav-link" href="/logout"><i class="fa fa-power-off"></i>Logout</a>
                 </div>
             </div>
         </div>
