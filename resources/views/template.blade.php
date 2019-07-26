@@ -1,5 +1,8 @@
 @extends('layouts.layout')
 
+@section('head')
+@endsection
+
 @section('breadcrumb_title')
     <h1>Dashboard</h1>
 @endsection
@@ -12,4 +15,7 @@
 
 @section('content')
     <h3>Isi dari content</h1>
+@endsection
+
+@section('foot')
 @endsection

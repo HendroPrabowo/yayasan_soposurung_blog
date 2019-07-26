@@ -32,11 +32,12 @@ Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
 Route::post('register', 'Auth\RegisterController@register');
 
+
+// ROUTES YANG SEBENARNYA
 // Admin Page
 Route::get('/admin', function(){
     return view('admin.index');
 })->middleware('auth')->name('admin');
-
 
 Route::get('/login', function(){
     return view('admin.login');
@@ -44,3 +45,4 @@ Route::get('/login', function(){
 
 // Resources Controller
 Route::resource('kategori', 'KategoriController')->middleware('auth');
+Route::resource('post', 'PostController')->middleware('auth');

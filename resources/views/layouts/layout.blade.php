@@ -20,6 +20,8 @@
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
+    @yield('head')
+
 </head>
 <body>
     @include('layouts.sidebar')
@@ -69,5 +71,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
     <script src="elaadmin/assets/js/main.js"></script>
+
+    @yield('foot')
 </body>
 </html>
