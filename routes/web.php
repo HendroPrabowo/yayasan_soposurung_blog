@@ -25,17 +25,16 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 // Authentication Routes ...
 // Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
-Route::post('/login', 'Auth\LoginController@login');
+// Route::post('/login', 'Auth\LoginController@login');
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 
 // Register User
 Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
-Route::post('register', 'Auth\RegisterController@register');
+Route::post('register', 'AuthController@register');
 
 Route::get('form', function(){
     return view('form');
 });
-
 
 // ROUTES YANG SEBENARNYA
 // Admin Page
@@ -43,9 +42,11 @@ Route::get('/admin', function(){
     return view('admin.index');
 })->middleware('auth')->name('admin');
 
+// Authentication
 Route::get('/login', function(){
     return view('admin.login');
 })->name('login');
+Route::post('/login', 'AuthController@login');
 
 // Resources Controller
 Route::resource('kategori', 'KategoriController')->middleware('auth');

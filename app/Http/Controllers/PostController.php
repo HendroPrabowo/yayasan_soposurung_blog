@@ -52,12 +52,19 @@ class PostController extends Controller
         ]);
 
         // Penyimpanan Gambar
-        $file = $request->file('gambar');
-        $fileName = $post->id.'.'.$post->judul.'.'.$file->getClientOriginalExtension();
-        $path = 'image/post/';
-        $file->move($path, $fileName);
+        // $file = $request->file('gambar');
+        // $fileName = $post->id.'.'.$post->judul.'.'.$file->getClientOriginalExtension();
+        // $path = 'image/post/';
+        // $file->move($path, $fileName);
+        //
+        // $post->gambar = $path.$fileName;
+        // $post->save();
 
-        $post->gambar = $path.$fileName;
+        $file = $request->file('gambar');
+        $imageName = $post->id.'.'.$post->judul.'.'.$file->getClientOriginalExtension();
+        $path = $request->file('gambar')->storeAs('public/posting/', $imageName);
+
+        $post->gambar = 'posting/'.$imageName;
         $post->save();
 
         return redirect()->action('PostController@index');

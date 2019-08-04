@@ -23,22 +23,28 @@
 				<form method="post" class="login100-form validate-form" action="/login">
 					@csrf
 
-					@error('email')
+					<!-- @error('email')
 					<div class="alert alert-danger">
 						<i class="fa fa-exclamation-triangle"></i>&nbsp;
 						Email atau Password Salah
 					</div>
-					@enderror
+					@enderror -->
+
+					@if (session('status'))
+					    <div class="alert alert-danger">
+					        {{ session('status') }}
+					    </div>
+					@endif
 
 					<span class="login100-form-title p-b-50">
 						Admin Login
 					</span>
 					<span class="login100-form-avatar">
-						<img src="{{ asset('image/logo/yayasan_soposurung_logo.png') }}" alt="AVATAR">
+						<img src="{{ asset('image/logo/yayasan_soposurung_logo.png') }}" alt="YASOP">
 					</span>
 
 					<div class="wrap-input100 validate-input m-t-50 m-b-30" data-validate = "Enter username">
-						<input class="input100" type="text" name="email">
+						<input class="input100" type="text" name="username">
 						<!-- <input class="input100" type="text" name="username"> -->
 						<span class="focus-input100" data-placeholder="Username"></span>
 					</div>
