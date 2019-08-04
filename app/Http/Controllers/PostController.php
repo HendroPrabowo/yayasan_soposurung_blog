@@ -42,6 +42,8 @@ class PostController extends Controller
     {
         $request->validated();
 
+        // dd($request);
+
         $post = Post::create([
             'judul'         => $request->judul,
             'posting'       => $request->posting,

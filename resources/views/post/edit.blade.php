@@ -1,6 +1,13 @@
 @extends('layouts.layout')
 
 @section('head')
+<script src="{{ asset('/tinymce/js/tinymce/tinymce.min.js') }}"></script>
+<script>
+    tinymce.init({
+        selector: '#mytextarea',
+        menubar: false,
+    });
+</script>
 @endsection
 
 @section('breadcrumb_title')
@@ -31,8 +38,12 @@
 
                 <div class="form-group">
                     <label for="posting">Postingan</label>
-                    <textarea name="posting" class="form-control">{{ $post->posting }}</textarea>
+                    <textarea name="posting" rows=15 class="form-control" id="mytextarea">{{ $post->posting }}</textarea>
                 </div>
+                <!-- <div class="form-group">
+                    <label for="posting">Postingan</label>
+                    <textarea name="posting" class="form-control">{{ $post->posting }}</textarea>
+                </div> -->
                 @error('posting')
                     <div class="alert alert-danger">{{ $message }}</div>
                 @enderror

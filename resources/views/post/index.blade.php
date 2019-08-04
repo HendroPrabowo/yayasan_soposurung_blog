@@ -33,7 +33,7 @@
                     <td>{{ $value->judul }}</td>
                     <!-- <td>{{ $value->gambar }}</td> -->
                     <td><img src="{{ $value->gambar }}" alt="gambar" style="height: 100px; width: 100px"></td>
-                    <td>{{ $value->posting }}</td>
+                    <td><?php echo $value->posting ?></td>
                     <td>
                         @if($value->kategori == null)
                             Tidak Berkategori

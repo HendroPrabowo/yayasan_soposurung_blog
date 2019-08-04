@@ -14,7 +14,7 @@
 @endsection
 
 @section('content')
-    <h3>Isi dari content</h1>
+    <h3>Isi dari content</h3>
 @endsection
 
 @section('foot')

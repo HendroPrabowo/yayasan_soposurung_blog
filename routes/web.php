@@ -32,6 +32,10 @@ Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
 Route::post('register', 'Auth\RegisterController@register');
 
+Route::get('form', function(){
+    return view('form');
+});
+
 
 // ROUTES YANG SEBENARNYA
 // Admin Page
