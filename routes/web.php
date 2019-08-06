@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 // Dashboard Blog
 Route::get('/index', function () {
-    return view('index');
+    return view('layouts_blog/index');
 });
 
 // Auth::routes();
@@ -51,3 +51,20 @@ Route::post('/login', 'AuthController@login');
 // Resources Controller
 Route::resource('kategori', 'KategoriController')->middleware('auth');
 Route::resource('post', 'PostController')->middleware('auth');
+
+//Tentang Asrama
+Route::get('visimisi', function(){
+    return view('tentang_asrama.visimisi');
+});
+Route::get('sejarah', function(){
+    return view('tentang_asrama.sejarah');
+});
+Route::get('lokasi', function(){
+    return view('tentang_asrama.lokasi');
+});
+Route::get('kontak', function(){
+    return view('tentang_asrama.kontak');
+});
+Route::get('depan', function(){
+    return view('layouts_blog.depan');
+});

@@ -24,6 +24,18 @@
                    </ul>
                </li>
 
+               <li class="menu-title">Halaman Blog</li>
+               <li class="menu-item-has-children active dropdown">
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-home"></i>Tentang Asrama</a>
+                   <ul class="sub-menu children dropdown-menu">
+                       <li><i class="fa fa-flag-checkered"></i><a href="#">Visi Misi</a></li>
+                       <li><i class="fa fa-book"></i><a href="#">Sejarah</a></li>
+                       <li><i class="fa fa-group"></i><a href="#">Pendiri</a></li>
+                       <li><i class="fa fa-globe"></i><a href="#">Lokasi</a></li>
+                       <li><i class="fa fa-phone"></i><a href="#">Kontak</a></li>
+                   </ul>
+               </li>
+
            </ul>
        </div><!-- /.navbar-collapse -->
    </nav>
