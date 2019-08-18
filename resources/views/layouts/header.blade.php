@@ -8,7 +8,7 @@
     <div class="top-right">
         <div class="header-menu">
             <div class="user-area dropdown float-right">
-                <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a href="/" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img style="width:40px" src="{{ asset('image/logo/yayasan_soposurung_logo.png') }}" alt="Yasop">&nbsp;Admin
                 </a>
                 <div class="user-menu dropdown-menu">

@@ -13,6 +13,7 @@
                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-file"></i>Posting</a>
                    <ul class="sub-menu children dropdown-menu">
                        <li><i class="fa fa-file"></i><a href="/post">Semua Posting</a></li>
+                       <li><i class="fa fa-file"></i><a href="/carousel">Carousel</a></li>
                        <!-- <li><i class="fa fa-puzzle-piece"></i><a href="#">Tambah Posting</a></li> -->
                    </ul>
                </li>

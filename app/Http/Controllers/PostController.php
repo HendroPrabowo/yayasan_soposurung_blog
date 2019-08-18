@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Post;
 use App\Kategori;
+use App\Carousel;
 use App\Http\Requests\PostRequest;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
@@ -18,7 +19,9 @@ class PostController extends Controller
     public function index()
     {
         $post = Post::all()->sortByDesc('created_at');
-        return view('post.index', ['post' => $post]);
+        return view('post.index', [
+            'post' => $post,
+        ]);
     }
 
     /**
@@ -116,11 +119,10 @@ class PostController extends Controller
 
         // Penyimpanan Gambar
         $file = $request->file('gambar');
-        $fileName = $post->id.'.'.$post->judul.'.'.$file->getClientOriginalExtension();
-        $path = 'image/post/';
-        $file->move($path, $fileName);
+        $imageName = $post->id.'.'.$post->judul.'.'.$file->getClientOriginalExtension();
+        $path = $request->file('gambar')->storeAs('public/posting/', $imageName);
 
-        $post->gambar = $path.$fileName;
+        $post->gambar = 'posting/'.$imageName;
         $post->save();
 
         return redirect()->action('PostController@index');
@@ -137,5 +139,41 @@ class PostController extends Controller
         // $post = Post::find($id);
         Post::destroy($id);
         return redirect()->action('PostController@index');
+    }
+
+    public function home(){
+        $kategori = Kategori::all();
+        $carousel = Carousel::all();
+        $post = Post::all()->sortByDesc('created_at');
+        return view('post.home', [
+            'post' => $post,
+            'kategori' => $kategori,
+            'carousel' => $carousel,
+        ]);
+    }
+
+    public function lihat($id){
+        $post = Post::find($id);
+        return view('post.view', ['post' => $post]);
+    }
+
+    public function kategori($id){
+        $kategori = Kategori::find($id);
+        $kategori_all = Kategori::all();
+        if(is_null($kategori)){
+            $post = Post::where('kategori_id', null)->get();
+            return view('post.kategori', [
+                'post' => $post,
+                'kategori' => $kategori,
+                'kategori_all' => $kategori_all,
+            ]);
+        }else{
+            $post = Post::where('kategori_id', $kategori->id)->get();
+            return view('post.kategori', [
+                'post' => $post,
+                'kategori' => $kategori,
+                'kategori_all' => $kategori_all,
+            ]);
+        }
     }
 }

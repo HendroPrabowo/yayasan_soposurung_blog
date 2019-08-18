@@ -11,13 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('layouts_blog.depan');
+// });
 
 // Dashboard Blog
 Route::get('/index', function () {
-    return view('layouts_blog/index');
+    // return view('layouts_blog/index');
+    return view('layouts_blog.depan');
 });
 
 // Auth::routes();
@@ -51,6 +52,7 @@ Route::post('/login', 'AuthController@login');
 // Resources Controller
 Route::resource('kategori', 'KategoriController')->middleware('auth');
 Route::resource('post', 'PostController')->middleware('auth');
+Route::resource('carousel', 'CarouselController')->middleware('auth');
 
 //Tentang Asrama
 Route::get('visimisi', function(){
@@ -59,12 +61,24 @@ Route::get('visimisi', function(){
 Route::get('sejarah', function(){
     return view('tentang_asrama.sejarah');
 });
+Route::get('pendiri', function(){
+    return view('tentang_asrama.pendiri');
+});
 Route::get('lokasi', function(){
     return view('tentang_asrama.lokasi');
 });
 Route::get('kontak', function(){
     return view('tentang_asrama.kontak');
 });
+
+
+
 Route::get('depan', function(){
     return view('layouts_blog.depan');
 });
+
+// ROUTES USER BIASA
+// User melihat postingan
+Route::get('/', 'PostController@home');
+Route::get('/lihat/{id}', 'PostController@lihat');
+Route::get('/kategori/{id}/kategori', 'PostController@kategori');
