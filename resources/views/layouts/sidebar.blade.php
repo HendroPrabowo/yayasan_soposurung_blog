@@ -39,11 +39,11 @@
                <li class="menu-item-has-children active dropdown">
                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-users"></i>Pamong</a>
                    <ul class="sub-menu children dropdown-menu">
-                       <li><i class="fa fa-user"></i><a href="#">Kepala Asrama</a></li>
-                       <li><i class="fa fa-users"></i><a href="#">Staf Pengajar (Guru)</a></li>
-                       <li><i class="fa fa-user"></i><a href="#">Staf Pembina</a></li>
-                       <li><i class="fa fa-user"></i><a href="#">Staf Pendukung</a></li>
-                       <li><i class="fa fa-bars"></i><a href="#">Struktur Organisasi</a></li>
+                       <li><i class="fa fa-user"></i><a href="/kepala_asrama">Kepala Asrama</a></li>
+                       <li><i class="fa fa-users"></i><a href="/staf_pengajar">Staf Pengajar (Guru)</a></li>
+                       <li><i class="fa fa-user"></i><a href="/staf_pembina">Staf Pembina</a></li>
+                       <li><i class="fa fa-user"></i><a href="/staf_pendukung">Staf Pendukung</a></li>
+                       <li><i class="fa fa-bars"></i><a href="/struktur_organisasi">Struktur Organisasi</a></li>
                    </ul>
                </li>
 

@@ -66,13 +66,19 @@ Route::resource('staf_pembina', 'StafPembinaController')->middleware('auth');
 Route::resource('staf_pendukung', 'StafPendukungController')->middleware('auth');
 Route::resource('struktur_organisasi', 'StrukturOrganisasiController')->middleware('auth');
 
-
+//User Biasa
 //Tentang Asrama
 Route::get('tentang_asrama/visimisi', 'TentangAsramaController@visimisi');
 Route::get('tentang_asrama/sejarah', 'TentangAsramaController@sejarah');
 Route::get('tentang_asrama/pendiri', 'TentangAsramaController@pendiri');
 Route::get('tentang_asrama/lokasi', 'TentangAsramaController@lokasi');
 Route::get('tentang_asrama/kontak', 'TentangAsramaController@kontak');
+//Pamong
+Route::get('pamong/kepala_asrama', 'PamongController@kepala_asrama');
+Route::get('pamong/staf_pembina', 'PamongController@staf_pembina');
+Route::get('pamong/staf_pendukung', 'PamongController@staf_pendukung');
+Route::get('pamong/staf_pengajar', 'PamongController@staf_pengajar');
+Route::get('pamong/struktur_organisasi', 'PamongController@struktur_organisasi');
 
 Route::get('depan', function(){
     return view('layouts_blog.depan');

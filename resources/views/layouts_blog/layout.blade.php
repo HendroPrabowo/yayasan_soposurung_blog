@@ -53,11 +53,11 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pamong</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Kepala Asrama</a>
-                        <a class="dropdown-item" href="#">Staf Pengajar (Guru)</a>
-                        <a class="dropdown-item" href="#">Staf Pembina</a>
-                        <a class="dropdown-item" href="#">Staf Pendukung</a>
-                        <a class="dropdown-item" href="#">Struktur Organisasi</a>
+                        <a class="dropdown-item" href="/pamong/kepala_asrama">Kepala Asrama</a>
+                        <a class="dropdown-item" href="/pamong/staf_pengajar">Staf Pengajar (Guru)</a>
+                        <a class="dropdown-item" href="/pamong/staf_pembina">Staf Pembina</a>
+                        <a class="dropdown-item" href="/pamong/staf_pendukung">Staf Pendukung</a>
+                        <a class="dropdown-item" href="/pamong/struktur_organisasi">Struktur Organisasi</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
