@@ -73,6 +73,11 @@ Route::resource('kesehatan', 'KesehatanController')->middleware('auth');
 Route::resource('it', 'ItController')->middleware('auth');
 Route::resource('olahraga', 'OlahragaController')->middleware('auth');
 Route::resource('sosial', 'SosialController')->middleware('auth');
+//Kegiatan
+Route::resource('ekstrakurikuler', 'EkstrakurikulerController')->middleware('auth');
+Route::resource('rutinitas', 'RutinitasController')->middleware('auth');
+Route::resource('minatbakat', 'MinatBakatController')->middleware('auth');
+Route::resource('lainnya', 'LainnyaController')->middleware('auth');
 
 
 //User Biasa
@@ -96,6 +101,11 @@ Route::get('fasilitas/kesehatan', 'FasilitasController@kesehatan');
 Route::get('fasilitas/it', 'FasilitasController@it');
 Route::get('fasilitas/olahraga', 'FasilitasController@olahraga');
 Route::get('fasilitas/sosial', 'FasilitasController@sosial');
+//Kegiatan
+Route::get('kegiatan/rutinitas', 'KegiatanController@rutinitas');
+Route::get('kegiatan/ekstrakurikuler', 'KegiatanController@ekstrakurikuler');
+Route::get('kegiatan/minatbakat', 'KegiatanController@minatbakat');
+Route::get('kegiatan/lainnya', 'KegiatanController@lainnya');
 
 Route::get('depan', function(){
     return view('layouts_blog.depan');

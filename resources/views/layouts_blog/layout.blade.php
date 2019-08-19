@@ -75,10 +75,10 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kegiatan</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Rutinias</a>
-                        <a class="dropdown-item" href="#">Extrakurikuler</a>
-                        <a class="dropdown-item" href="#">Minta-Bakat</a>
-                        <a class="dropdown-item" href="#">Lainnya</a>
+                        <a class="dropdown-item" href="/kegiatan/rutinitas">Rutinias</a>
+                        <a class="dropdown-item" href="/kegiatan/ekstrakurikuler">Extrakurikuler</a>
+                        <a class="dropdown-item" href="/kegiatan/minatbakat">Minta-Bakat</a>
+                        <a class="dropdown-item" href="/kegiatan/lainnya">Lainnya</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">

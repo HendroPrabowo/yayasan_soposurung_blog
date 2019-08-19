@@ -58,6 +58,15 @@
                        <li><i class="fa fa-user"></i><a href="/sosial">Sosial</a></li>
                    </ul>
                </li>
+               <li class="menu-item-has-children active dropdown">
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-users"></i>Kegiatan</a>
+                   <ul class="sub-menu children dropdown-menu">
+                       <li><i class="fa fa-user"></i><a href="/rutinitas">Rutinitas</a></li>
+                       <li><i class="fa fa-user"></i><a href="/ekstrakurikuler">Ekstrakurikuler</a></li>
+                       <li><i class="fa fa-user"></i><a href="/minatbakat">Minat Bakat</a></li>
+                       <li><i class="fa fa-user"></i><a href="/lainnya">Lainnya</a></li>
+                   </ul>
+               </li>
            </ul>
        </div><!-- /.navbar-collapse -->
    </nav>
