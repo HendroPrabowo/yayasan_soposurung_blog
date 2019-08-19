@@ -19,13 +19,20 @@
 
     <!-- Custom styles for this template -->
     <link href="css/heroic-features.css" rel="stylesheet">
-
+    <style media="screen">
+        a.nav-link, a.navbar-brand{
+            color: white;
+        }
+        a.nav-link:hover, a.navbar-brand:hover {
+            color: yellow;
+        }
+    </style>
 </head>
 
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #660000">
     <div class="container">
       <a class="navbar-brand" href="/"><img src="{{ asset('image\logo\yayasan_soposurung_logo.png') }}" width="30" height="30" class="d-inline-block align-top" alt="">  Yayasan Soposurung</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,11 +43,11 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tentang Asrama</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/visimisi">Visi Misi</a>
-                        <a class="dropdown-item" href="/sejarah">Sejarah</a>
-                        <a class="dropdown-item" href="/pendiri">Pendiri</a>
-                        <a class="dropdown-item" href="/lokasi">Lokasi</a>
-                        <a class="dropdown-item" href="/kontak">Kontak</a>
+                        <a class="dropdown-item" href="/tentang_asrama/visimisi">Visi Misi</a>
+                        <a class="dropdown-item" href="/tentang_asrama/sejarah">Sejarah</a>
+                        <a class="dropdown-item" href="/tentang_asrama/pendiri">Pendiri</a>
+                        <a class="dropdown-item" href="/tentang_asrama/lokasi">Lokasi</a>
+                        <a class="dropdown-item" href="/tentang_asrama/kontak">Kontak</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -98,9 +105,38 @@
   <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="py-4 bg-dark">
+  <footer class="py-4" style="background-color: #660000">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Yayasan Soposurung 2019</p>
+      <!-- <p class="m-0 text-center text-white">Copyright &copy; 2019 Yayasan Soposurung Balige. All right reserved</p> -->
+      <div class="row">
+          <div class="col-md-3 border">
+
+          </div>
+          <div class="col-md-6 border">
+              <p class="m-0 text-center text-white">Copyright &copy; 2019 Yayasan Soposurung Balige. All right reserved</p>
+              <div class="row">
+                  <div class="col-md-2"></div>
+                  <div class="col-md-8">
+                      <table class="table">
+                          <tr>
+                              <td width="10%"><img src="{{ asset('image/logo/logo_blog.png') }}" alt=""></td>
+                              <td class="text-white">
+                                  <h4><b>Yayasan Soposorung</b></h4>
+                                  Jl. Dr. Adrianus Sinaga<br>
+                                  Soposurung - Balige<br>
+                                  Kabupaten Toba Samosir 22312<br>
+                                  Telp/Fax. (0632) 21496
+                              </td>
+                          </tr>
+                      </table>
+                  </div>
+                  <div class="col-md-2"> </div>
+              </div>
+          </div>
+          <div class="col-md-3 border">
+              <p class="text-white">Designed By : Hendro Prabowo</p>
+          </div>
+      </div>
     </div>
     <!-- /.container -->
   </footer>

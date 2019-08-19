@@ -144,7 +144,7 @@ class PostController extends Controller
     public function home(){
         $kategori = Kategori::all();
         $carousel = Carousel::all();
-        $post = Post::all()->sortByDesc('created_at');
+        $post = Post::orderBy('created_at', 'desc')->paginate(10);
         return view('post.home', [
             'post' => $post,
             'kategori' => $kategori,

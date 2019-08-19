@@ -53,25 +53,26 @@ Route::post('/login', 'AuthController@login');
 Route::resource('kategori', 'KategoriController')->middleware('auth');
 Route::resource('post', 'PostController')->middleware('auth');
 Route::resource('carousel', 'CarouselController')->middleware('auth');
+//Tentang Asrama
+Route::resource('visimisi', 'VisimisiController')->middleware('auth');
+Route::resource('sejarah', 'SejarahController')->middleware('auth');
+Route::resource('pendiri', 'PendiriController')->middleware('auth');
+Route::resource('lokasi', 'LokasiController')->middleware('auth');
+Route::resource('kontak', 'KontakController')->middleware('auth');
+//Pamong
+Route::resource('kepala_asrama', 'KepalaAsramaController')->middleware('auth');
+Route::resource('staf_pengajar', 'StafPengajarController')->middleware('auth');
+Route::resource('staf_pembina', 'StafPembinaController')->middleware('auth');
+Route::resource('staf_pendukung', 'StafPendukungController')->middleware('auth');
+Route::resource('struktur_organisasi', 'StrukturOrganisasiController')->middleware('auth');
+
 
 //Tentang Asrama
-Route::get('visimisi', function(){
-    return view('tentang_asrama.visimisi');
-});
-Route::get('sejarah', function(){
-    return view('tentang_asrama.sejarah');
-});
-Route::get('pendiri', function(){
-    return view('tentang_asrama.pendiri');
-});
-Route::get('lokasi', function(){
-    return view('tentang_asrama.lokasi');
-});
-Route::get('kontak', function(){
-    return view('tentang_asrama.kontak');
-});
-
-
+Route::get('tentang_asrama/visimisi', 'TentangAsramaController@visimisi');
+Route::get('tentang_asrama/sejarah', 'TentangAsramaController@sejarah');
+Route::get('tentang_asrama/pendiri', 'TentangAsramaController@pendiri');
+Route::get('tentang_asrama/lokasi', 'TentangAsramaController@lokasi');
+Route::get('tentang_asrama/kontak', 'TentangAsramaController@kontak');
 
 Route::get('depan', function(){
     return view('layouts_blog.depan');

@@ -29,11 +29,21 @@
                <li class="menu-item-has-children active dropdown">
                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-home"></i>Tentang Asrama</a>
                    <ul class="sub-menu children dropdown-menu">
-                       <li><i class="fa fa-flag-checkered"></i><a href="#">Visi Misi</a></li>
-                       <li><i class="fa fa-book"></i><a href="#">Sejarah</a></li>
-                       <li><i class="fa fa-group"></i><a href="#">Pendiri</a></li>
-                       <li><i class="fa fa-globe"></i><a href="#">Lokasi</a></li>
-                       <li><i class="fa fa-phone"></i><a href="#">Kontak</a></li>
+                       <li><i class="fa fa-flag-checkered"></i><a href="/visimisi">Visi Misi</a></li>
+                       <li><i class="fa fa-book"></i><a href="/sejarah">Sejarah</a></li>
+                       <li><i class="fa fa-group"></i><a href="/pendiri">Pendiri</a></li>
+                       <li><i class="fa fa-globe"></i><a href="/lokasi">Lokasi</a></li>
+                       <li><i class="fa fa-phone"></i><a href="/kontak">Kontak</a></li>
+                   </ul>
+               </li>
+               <li class="menu-item-has-children active dropdown">
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-users"></i>Pamong</a>
+                   <ul class="sub-menu children dropdown-menu">
+                       <li><i class="fa fa-user"></i><a href="#">Kepala Asrama</a></li>
+                       <li><i class="fa fa-users"></i><a href="#">Staf Pengajar (Guru)</a></li>
+                       <li><i class="fa fa-user"></i><a href="#">Staf Pembina</a></li>
+                       <li><i class="fa fa-user"></i><a href="#">Staf Pendukung</a></li>
+                       <li><i class="fa fa-bars"></i><a href="#">Struktur Organisasi</a></li>
                    </ul>
                </li>
 

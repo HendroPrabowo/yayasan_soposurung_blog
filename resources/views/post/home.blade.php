@@ -76,6 +76,10 @@ $i=0;
             </div>
         </div>
         @endforeach
+
+        <div class="d-flex justify-content-center" style="margin-top: 10px">
+            {{ $post->links() }}
+        </div>
     </div>
     <div class="col-md-2 card text-center">
         <h3>Kategori</h3>

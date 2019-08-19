@@ -5,7 +5,7 @@
 <script>
     tinymce.init({
         selector: '#mytextarea',
-        menubar: false,
+        // menubar: false,
     });
 </script>
 @endsection
