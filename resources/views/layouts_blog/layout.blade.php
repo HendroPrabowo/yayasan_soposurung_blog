@@ -63,13 +63,13 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fasilitas</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Akomodasi</a>
-                        <a class="dropdown-item" href="#">Belajar</a>
-                        <a class="dropdown-item" href="#">Praktikum</a>
-                        <a class="dropdown-item" href="#">Kesehatan</a>
-                        <a class="dropdown-item" href="#">IT</a>
-                        <a class="dropdown-item" href="#">Olahraga</a>
-                        <a class="dropdown-item" href="#">Sosial</a>
+                        <a class="dropdown-item" href="/fasilitas/akomodasi">Akomodasi</a>
+                        <a class="dropdown-item" href="/fasilitas/belajar">Belajar</a>
+                        <a class="dropdown-item" href="/fasilitas/praktikum">Praktikum</a>
+                        <a class="dropdown-item" href="/fasilitas/kesehatan">Kesehatan</a>
+                        <a class="dropdown-item" href="/fasilitas/it">IT</a>
+                        <a class="dropdown-item" href="/fasilitas/olahraga">Olahraga</a>
+                        <a class="dropdown-item" href="/fasilitas/sosial">Sosial</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">

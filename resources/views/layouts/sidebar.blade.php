@@ -46,7 +46,18 @@
                        <li><i class="fa fa-bars"></i><a href="/struktur_organisasi">Struktur Organisasi</a></li>
                    </ul>
                </li>
-
+               <li class="menu-item-has-children active dropdown">
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-users"></i>Fasilitas</a>
+                   <ul class="sub-menu children dropdown-menu">
+                       <li><i class="fa fa-user"></i><a href="/akomodasi">Akomodasi</a></li>
+                       <li><i class="fa fa-user"></i><a href="/belajar">Belajar</a></li>
+                       <li><i class="fa fa-user"></i><a href="/praktikum">Praktikum</a></li>
+                       <li><i class="fa fa-user"></i><a href="/kesehatan">Kesehatan</a></li>
+                       <li><i class="fa fa-user"></i><a href="/it">IT</a></li>
+                       <li><i class="fa fa-user"></i><a href="/olahraga">Olahraga</a></li>
+                       <li><i class="fa fa-user"></i><a href="/sosial">Sosial</a></li>
+                   </ul>
+               </li>
            </ul>
        </div><!-- /.navbar-collapse -->
    </nav>

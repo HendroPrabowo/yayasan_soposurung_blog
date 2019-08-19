@@ -65,6 +65,15 @@ Route::resource('staf_pengajar', 'StafPengajarController')->middleware('auth');
 Route::resource('staf_pembina', 'StafPembinaController')->middleware('auth');
 Route::resource('staf_pendukung', 'StafPendukungController')->middleware('auth');
 Route::resource('struktur_organisasi', 'StrukturOrganisasiController')->middleware('auth');
+//Fasilitas
+Route::resource('akomodasi', 'AkomodasiController')->middleware('auth');
+Route::resource('belajar', 'BelajarController')->middleware('auth');
+Route::resource('praktikum', 'PraktikumController')->middleware('auth');
+Route::resource('kesehatan', 'KesehatanController')->middleware('auth');
+Route::resource('it', 'ItController')->middleware('auth');
+Route::resource('olahraga', 'OlahragaController')->middleware('auth');
+Route::resource('sosial', 'SosialController')->middleware('auth');
+
 
 //User Biasa
 //Tentang Asrama
@@ -79,6 +88,14 @@ Route::get('pamong/staf_pembina', 'PamongController@staf_pembina');
 Route::get('pamong/staf_pendukung', 'PamongController@staf_pendukung');
 Route::get('pamong/staf_pengajar', 'PamongController@staf_pengajar');
 Route::get('pamong/struktur_organisasi', 'PamongController@struktur_organisasi');
+//Fasilitas
+Route::get('fasilitas/akomodasi', 'FasilitasController@akomodasi');
+Route::get('fasilitas/belajar', 'FasilitasController@belajar');
+Route::get('fasilitas/praktikum', 'FasilitasController@praktikum');
+Route::get('fasilitas/kesehatan', 'FasilitasController@kesehatan');
+Route::get('fasilitas/it', 'FasilitasController@it');
+Route::get('fasilitas/olahraga', 'FasilitasController@olahraga');
+Route::get('fasilitas/sosial', 'FasilitasController@sosial');
 
 Route::get('depan', function(){
     return view('layouts_blog.depan');
