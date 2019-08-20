@@ -27,6 +27,6 @@ class CreateStafPengajarsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('staf_pengajars');
+        Schema::dropIfExists('staf_pengajar');
     }
 }

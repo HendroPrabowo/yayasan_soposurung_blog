@@ -27,6 +27,6 @@ class CreateBelajarsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('belajars');
+        Schema::dropIfExists('belajar');
     }
 }

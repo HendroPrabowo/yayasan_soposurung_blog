@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateStrukturOrganisasisTable extends Migration
+class CreateDaftarSiswasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,11 @@ class CreateStrukturOrganisasisTable extends Migration
      */
     public function up()
     {
-        Schema::create('struktur_organisasi', function (Blueprint $table) {
+        Schema::create('daftar_siswa', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->text('text');
+            $table->string('no_induk', 255);
+            $table->string('nama', 255);
+            $table->string('kelas', 255);
             $table->timestamps();
         });
     }
@@ -27,6 +29,6 @@ class CreateStrukturOrganisasisTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('struktur_organisasi');
+        Schema::dropIfExists('daftar_siswa');
     }
 }

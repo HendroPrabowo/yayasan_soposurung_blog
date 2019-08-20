@@ -27,6 +27,6 @@ class CreateItsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('its');
+        Schema::dropIfExists('it');
     }
 }

@@ -27,6 +27,6 @@ class CreatePraktikumsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('praktikums');
+        Schema::dropIfExists('praktikum');
     }
 }

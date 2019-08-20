@@ -27,6 +27,6 @@ class CreateLainnyasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('lainnyas');
+        Schema::dropIfExists('lainnya');
     }
 }

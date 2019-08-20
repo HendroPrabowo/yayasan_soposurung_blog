@@ -27,6 +27,6 @@ class CreateKepalaAsramasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('kepala_asramas');
+        Schema::dropIfExists('kepala_asrama');
     }
 }

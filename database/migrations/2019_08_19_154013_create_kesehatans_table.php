@@ -27,6 +27,6 @@ class CreateKesehatansTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('kesehatans');
+        Schema::dropIfExists('kesehatan');
     }
 }

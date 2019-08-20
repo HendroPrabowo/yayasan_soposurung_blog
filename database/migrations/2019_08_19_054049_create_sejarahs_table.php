@@ -27,6 +27,6 @@ class CreateSejarahsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sejarahs');
+        Schema::dropIfExists('sejarah');
     }
 }

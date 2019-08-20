@@ -78,6 +78,11 @@ Route::resource('ekstrakurikuler', 'EkstrakurikulerController')->middleware('aut
 Route::resource('rutinitas', 'RutinitasController')->middleware('auth');
 Route::resource('minatbakat', 'MinatBakatController')->middleware('auth');
 Route::resource('lainnya', 'LainnyaController')->middleware('auth');
+//Kesiswaan
+Route::resource('organisasi_siswa', 'OrganisasiSiswaController')->middleware('auth');
+Route::resource('daftar_siswa', 'DaftarSiswaController')->middleware('auth');
+Route::resource('daftar_prestasi', 'DaftarPrestasiController')->middleware('auth');
+Route::resource('blog_siswa', 'BlogSiswaController')->middleware('auth');
 
 
 //User Biasa
@@ -106,6 +111,11 @@ Route::get('kegiatan/rutinitas', 'KegiatanController@rutinitas');
 Route::get('kegiatan/ekstrakurikuler', 'KegiatanController@ekstrakurikuler');
 Route::get('kegiatan/minatbakat', 'KegiatanController@minatbakat');
 Route::get('kegiatan/lainnya', 'KegiatanController@lainnya');
+//Kesiswaan
+Route::get('kesiswaan/organisasi_siswa', 'KesiswaanController@organisasi_siswa');
+Route::get('kesiswaan/daftar_siswa', 'KesiswaanController@daftar_siswa');
+Route::get('kesiswaan/daftar_prestasi', 'KesiswaanController@daftar_prestasi');
+Route::get('kesiswaan/blog_siswa', 'KesiswaanController@blog_siswa');
 
 Route::get('depan', function(){
     return view('layouts_blog.depan');

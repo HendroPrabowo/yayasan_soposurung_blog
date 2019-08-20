@@ -84,10 +84,10 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Kesiswaan</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Organisasi Siswa</a>
-                        <a class="dropdown-item" href="#">Daftar Siswa</a>
-                        <a class="dropdown-item" href="#">Data Prestasi</a>
-                        <a class="dropdown-item" href="#">Blog Siswa</a>
+                        <a class="dropdown-item" href="/kesiswaan/organisasi_siswa">Organisasi Siswa</a>
+                        <a class="dropdown-item" href="/kesiswaan/daftar_siswa">Daftar Siswa</a>
+                        <a class="dropdown-item" href="/kesiswaan/daftar_prestasi">Data Prestasi</a>
+                        <a class="dropdown-item" href="/kesiswaan/blog_siswa">Blog Siswa</a>
                     </div>
                 </li>
                 <li class="nav-item">

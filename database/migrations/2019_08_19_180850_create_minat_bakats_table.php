@@ -27,6 +27,6 @@ class CreateMinatBakatsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('minat_bakats');
+        Schema::dropIfExists('minat_bakat');
     }
 }

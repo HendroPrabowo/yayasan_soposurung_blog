@@ -27,6 +27,6 @@ class CreateSosialsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sosials');
+        Schema::dropIfExists('sosial');
     }
 }

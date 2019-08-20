@@ -67,6 +67,15 @@
                        <li><i class="fa fa-user"></i><a href="/lainnya">Lainnya</a></li>
                    </ul>
                </li>
+               <li class="menu-item-has-children active dropdown">
+                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-users"></i>Kesiswaan</a>
+                   <ul class="sub-menu children dropdown-menu">
+                       <li><i class="fa fa-user"></i><a href="/organisasi_siswa">Organisasi Siswa</a></li>
+                       <li><i class="fa fa-user"></i><a href="/daftar_siswa">Daftar Siswa</a></li>
+                       <li><i class="fa fa-user"></i><a href="/daftar_prestasi">Daftar Prestasi</a></li>
+                       <li><i class="fa fa-user"></i><a href="/blog_siswa">Blog Siswa</a></li>
+                   </ul>
+               </li>
            </ul>
        </div><!-- /.navbar-collapse -->
    </nav>

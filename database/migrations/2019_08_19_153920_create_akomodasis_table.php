@@ -27,6 +27,6 @@ class CreateAkomodasisTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('akomodasis');
+        Schema::dropIfExists('akomodasi');
     }
 }

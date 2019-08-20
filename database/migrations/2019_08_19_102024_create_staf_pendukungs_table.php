@@ -27,6 +27,6 @@ class CreateStafPendukungsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('staf_pendukungs');
+        Schema::dropIfExists('staf_pendukung');
     }
 }

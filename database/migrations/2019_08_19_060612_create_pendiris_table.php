@@ -27,6 +27,6 @@ class CreatePendirisTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pendiris');
+        Schema::dropIfExists('pendiri');
     }
 }

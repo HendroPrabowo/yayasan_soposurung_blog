@@ -27,6 +27,6 @@ class CreateEkstrakurikulersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ekstrakurikulers');
+        Schema::dropIfExists('ekstrakurikuler');
     }
 }

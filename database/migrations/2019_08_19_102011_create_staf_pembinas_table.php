@@ -27,6 +27,6 @@ class CreateStafPembinasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('staf_pembinas');
+        Schema::dropIfExists('staf_pembina');
     }
 }

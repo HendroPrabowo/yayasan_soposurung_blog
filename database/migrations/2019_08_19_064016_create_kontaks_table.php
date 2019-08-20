@@ -27,6 +27,6 @@ class CreateKontaksTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('kontaks');
+        Schema::dropIfExists('kontak');
     }
 }
