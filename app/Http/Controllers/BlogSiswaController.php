@@ -14,7 +14,8 @@ class BlogSiswaController extends Controller
      */
     public function index()
     {
-        //
+        $blog_siswa = BlogSiswa::all();
+        return view('admin.blog_siswa.index', ['blog_siswa' => $blog_siswa]);
     }
 
     /**
@@ -24,7 +25,7 @@ class BlogSiswaController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.blog_siswa.create');
     }
 
     /**
@@ -35,16 +36,28 @@ class BlogSiswaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'nama' => 'required',
+            'judul' => 'required',
+            'link' => 'required',
+        ]);
+
+        $siswa = BlogSiswa::create([
+            'nama' => $request->nama,
+            'judul' => $request->judul,
+            'link' => $request->link,
+        ]);
+
+        return redirect()->action('BlogSiswaController@index');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\BlogSiswa  $blogSiswa
+     * @param  \App\BlogSiswa  $daftarSiswa
      * @return \Illuminate\Http\Response
      */
-    public function show(BlogSiswa $blogSiswa)
+    public function show(BlogSiswa $daftarSiswa)
     {
         //
     }
@@ -52,34 +65,49 @@ class BlogSiswaController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\BlogSiswa  $blogSiswa
+     * @param  \App\BlogSiswa  $daftarSiswa
      * @return \Illuminate\Http\Response
      */
-    public function edit(BlogSiswa $blogSiswa)
+    public function edit($id)
     {
-        //
+        $blog_siswa = BlogSiswa::find($id);
+        return view('admin.blog_siswa.edit', ['blog_siswa' => $blog_siswa]);
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\BlogSiswa  $blogSiswa
+     * @param  \App\BlogSiswa  $daftarSiswa
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, BlogSiswa $blogSiswa)
+    public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'nama' => 'required',
+            'judul' => 'required',
+            'link' => 'required',
+        ]);
+
+        $blog_siswa = BlogSiswa::find($id);
+        $blog_siswa->judul = $request->judul;
+        $blog_siswa->nama = $request->nama;
+        $blog_siswa->link = $request->link;
+        $blog_siswa->save();
+
+        return redirect()->action('BlogSiswaController@index');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\BlogSiswa  $blogSiswa
+     * @param  \App\BlogSiswa  $daftarSiswa
      * @return \Illuminate\Http\Response
      */
-    public function destroy(BlogSiswa $blogSiswa)
+    public function destroy($id)
     {
-        //
+        BlogSiswa::destroy($id);
+
+        return redirect()->action('BlogSiswaController@index');
     }
 }

@@ -109,10 +109,10 @@
     <div class="container">
       <!-- <p class="m-0 text-center text-white">Copyright &copy; 2019 Yayasan Soposurung Balige. All right reserved</p> -->
       <div class="row">
-          <div class="col-md-3 border">
+          <div class="col-md-3">
 
           </div>
-          <div class="col-md-6 border">
+          <div class="col-md-6">
               <p class="m-0 text-center text-white">Copyright &copy; 2019 Yayasan Soposurung Balige. All right reserved</p>
               <div class="row">
                   <div class="col-md-2"></div>
@@ -133,7 +133,7 @@
                   <div class="col-md-2"> </div>
               </div>
           </div>
-          <div class="col-md-3 border">
+          <div class="col-md-3">
               <p class="text-white">Designed By : Hendro Prabowo</p>
           </div>
       </div>
